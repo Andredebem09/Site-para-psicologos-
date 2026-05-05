@@ -47,8 +47,10 @@ export default function Contact() {
                 <div>
                   <span className="contact__card-label">Localização</span>
                   <span className="contact__card-value">
-                    Rua Augusta, 1234 — Sala 56<br />
-                    Consolação, São Paulo — SP
+                    Órion Business & Health Complex<br />
+                    Av. Portugal, 1148<br />
+                    St. Marista, Goiânia — GO<br />
+                    74140-020, Brasil
                   </span>
                 </div>
               </div>
@@ -86,7 +88,7 @@ export default function Contact() {
             <div className="contact__map reveal reveal-delay-3">
               <iframe
                 title="Localização do Consultório"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975!2d-46.6533!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjgiUyA0NsKwMzknMTEuOSJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                src="https://maps.google.com/maps?q=Orion%20Business%20-%20Av.%3A%20Portugal%2C%201148%20-%20St.%20Marista%2C%20Goi%C3%A2nia%20-%20GO%2C%2074140-020%2C%20Brasil&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="220"
                 style={{ border: 0, borderRadius: '12px' }}

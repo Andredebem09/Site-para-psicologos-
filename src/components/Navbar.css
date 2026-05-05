@@ -5,13 +5,11 @@
   right: 0;
   z-index: 1000;
   padding: 20px 0;
+  background: var(--color-bg-primary);
   transition: all var(--transition-base);
 }
 
 .navbar--scrolled {
-  background: rgba(248, 245, 240, 0.92);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
   padding: 12px 0;
   box-shadow: 0 1px 20px rgba(44, 44, 40, 0.06);
 }

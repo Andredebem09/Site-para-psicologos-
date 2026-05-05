@@ -77,13 +77,17 @@
 
 /* Answer */
 .faq__answer-wrapper {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s var(--ease-out-expo);
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s var(--ease-out-expo);
 }
 
 .faq__item--open .faq__answer-wrapper {
-  max-height: 300px;
+  grid-template-rows: 1fr;
+}
+
+.faq__answer-inner {
+  overflow: hidden;
 }
 
 .faq__answer {

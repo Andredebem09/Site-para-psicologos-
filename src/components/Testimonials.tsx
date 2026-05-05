@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { Quote, ChevronLeft, ChevronRight, Star } from 'lucide-react';
 import './Testimonials.css';
@@ -36,6 +36,13 @@ export default function Testimonials() {
 
   const prev = () => setCurrent((c) => (c === 0 ? testimonials.length - 1 : c - 1));
   const next = () => setCurrent((c) => (c === testimonials.length - 1 ? 0 : c + 1));
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((c) => (c === testimonials.length - 1 ? 0 : c + 1));
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section className="testimonials" id="depoimentos" ref={ref}>

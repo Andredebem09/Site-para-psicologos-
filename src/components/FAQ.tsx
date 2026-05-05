@@ -50,20 +50,22 @@ function FAQItem({
   index: number;
 }) {
   return (
-    <div
-      className={`faq__item${isOpen ? ' faq__item--open' : ''} reveal reveal-delay-${Math.min(index + 1, 6)}`}
-    >
-      <button
-        className="faq__question"
-        onClick={onToggle}
-        aria-expanded={isOpen}
-        id={`faq-question-${index}`}
-      >
-        <span>{question}</span>
-        <ChevronDown size={20} className="faq__chevron" />
-      </button>
-      <div className="faq__answer-wrapper">
-        <p className="faq__answer">{answer}</p>
+    <div className={`reveal reveal-delay-${Math.min(index + 1, 6)}`}>
+      <div className={`faq__item${isOpen ? ' faq__item--open' : ''}`}>
+        <button
+          className="faq__question"
+          onClick={onToggle}
+          aria-expanded={isOpen}
+          id={`faq-question-${index}`}
+        >
+          <span>{question}</span>
+          <ChevronDown size={20} className="faq__chevron" />
+        </button>
+        <div className="faq__answer-wrapper">
+          <div className="faq__answer-inner">
+            <p className="faq__answer">{answer}</p>
+          </div>
+        </div>
       </div>
     </div>
   );
