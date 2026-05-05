@@ -1,0 +1,123 @@
+.contact {
+  padding: var(--space-section) 0;
+  background: var(--color-bg-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.contact__blob--1 {
+  width: 400px;
+  height: 400px;
+  background: var(--color-sage);
+  top: -15%;
+  left: -5%;
+  animation-duration: 20s;
+}
+
+.contact__blob--2 {
+  width: 300px;
+  height: 300px;
+  background: var(--color-terracotta);
+  bottom: -10%;
+  right: -5%;
+  opacity: 0.04;
+  animation-duration: 28s;
+}
+
+.contact__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+.contact__title {
+  font-size: var(--fs-h2);
+}
+
+.contact__title em {
+  font-style: italic;
+  color: var(--color-sage);
+}
+
+.contact__text {
+  font-size: var(--fs-body-lg);
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: var(--space-lg);
+}
+
+.contact__whatsapp-btn {
+  font-size: 1rem;
+  padding: 16px 36px;
+}
+
+/* Details Card */
+.contact__card {
+  background: var(--color-bg-card);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--space-lg);
+}
+
+.contact__card-item {
+  display: flex;
+  gap: var(--space-md);
+  padding: var(--space-sm) 0;
+}
+
+.contact__card-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(74, 103, 65, 0.08);
+  border-radius: var(--radius-md);
+  color: var(--color-sage);
+  flex-shrink: 0;
+}
+
+.contact__card-label {
+  display: block;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--color-sage);
+  margin-bottom: 4px;
+}
+
+.contact__card-value {
+  font-size: var(--fs-body);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.contact__card-divider {
+  height: 1px;
+  background: var(--color-bg-secondary);
+  margin: var(--space-sm) 0;
+}
+
+/* Map */
+.contact__map {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact__layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+}
