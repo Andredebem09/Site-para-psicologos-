@@ -30,7 +30,6 @@ export default function Testimonials() {
   const [current, setCurrent] = useState(0);
   const [progress, setProgress] = useState(0);
   const ref = useScrollReveal();
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
   const startTimeRef = useRef<number>(Date.now());
   const rafRef = useRef<number>(0);
 
