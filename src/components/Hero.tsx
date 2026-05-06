@@ -19,7 +19,7 @@ export default function Hero() {
         <div className="hero__text">
           <div className="hero__badge reveal">
             <Leaf size={14} />
-            <span>Atendimento Presencial & Online</span>
+            <span>Atendimento Online</span>
           </div>
 
           <h1 className="hero__title reveal reveal-delay-1">

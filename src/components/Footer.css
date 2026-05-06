@@ -1,7 +1,7 @@
 .footer {
   padding: var(--space-2xl) 0 0;
   background: var(--color-bg-dark);
-  color: rgba(248, 245, 240, 0.7);
+  color: var(--color-text-primary);
 }
 
 .footer__grid {
@@ -9,7 +9,7 @@
   grid-template-columns: 1.5fr 1fr 1fr;
   gap: var(--space-3xl);
   padding-bottom: var(--space-2xl);
-  border-bottom: 1px solid rgba(248, 245, 240, 0.08);
+  border-bottom: 1px solid var(--overlay-10);
 }
 
 /* Brand */
@@ -39,7 +39,7 @@
   font-family: var(--font-display);
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--color-text-light);
+  color: var(--color-text-primary);
 }
 
 .footer__logo-title {
@@ -68,16 +68,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(248, 245, 240, 0.12);
+  border: 1px solid var(--overlay-15);
   border-radius: 50%;
-  color: rgba(248, 245, 240, 0.6);
+  color: var(--color-text-secondary);
   transition: all var(--transition-fast);
 }
 
 .footer__social-link:hover {
   background: var(--color-sage);
   border-color: var(--color-sage);
-  color: #fff;
+  color: var(--color-text-light);
 }
 
 /* Columns */
@@ -85,7 +85,7 @@
   font-family: var(--font-display);
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--color-text-light);
+  color: var(--color-text-primary);
   margin-bottom: var(--space-md);
 }
 
@@ -97,7 +97,7 @@
 
 .footer__link {
   font-size: var(--fs-small);
-  color: rgba(248, 245, 240, 0.5);
+  color: var(--color-text-muted);
   transition: color var(--transition-fast);
   padding: 4px 0;
 }
@@ -132,12 +132,12 @@
 
 .footer__copy {
   font-size: var(--fs-label);
-  color: rgba(248, 245, 240, 0.35);
+  color: var(--color-text-muted);
 }
 
 .footer__made {
   font-size: var(--fs-label);
-  color: rgba(248, 245, 240, 0.35);
+  color: var(--color-text-muted);
   display: flex;
   align-items: center;
   gap: 4px;

@@ -33,7 +33,7 @@
 
 .approach__title em {
   font-style: italic;
-  color: var(--color-sage);
+  color: inherit;
 }
 
 .approach__text {

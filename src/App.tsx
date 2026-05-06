@@ -5,6 +5,7 @@ import Services from './components/Services';
 import Approach from './components/Approach';
 import HowItWorks from './components/HowItWorks';
 import Testimonials from './components/Testimonials';
+import QuoteOfTheDay from './components/QuoteOfTheDay';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -21,6 +22,7 @@ function App() {
         <HowItWorks />
         <Approach />
         <Testimonials />
+        <QuoteOfTheDay />
         <FAQ />
         <Contact />
       </main>

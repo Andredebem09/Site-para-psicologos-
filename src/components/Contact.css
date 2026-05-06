@@ -43,7 +43,7 @@
 
 .contact__title em {
   font-style: italic;
-  color: var(--color-sage);
+  color: inherit;
 }
 
 .contact__text {
